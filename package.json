@@ -1,0 +1,19 @@
+{
+  "name": "pricey",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:luiscarlin/pricey.git",
+  "author": "Luis Carlin <luiscarlin@gmail.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
