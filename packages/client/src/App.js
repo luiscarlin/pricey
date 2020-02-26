@@ -1,7 +1,7 @@
 import React from 'react'
 
 function App() {
-  return <div>hello there</div>
+  return <h1>hello there</h1>
 }
 
 export default App
