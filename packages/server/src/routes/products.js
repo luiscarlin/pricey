@@ -4,8 +4,10 @@ import Product from '../models/product'
 const router = express.Router()
 
 router.get('/', async (req, res) => {
-  await Product.getAll()
-  res.send({ data: 'from server' })
+  const allProducts = await Product.getAll()
+
+  console.log(allProducts)
+  res.send({ data: allProducts })
 })
 
 export default router

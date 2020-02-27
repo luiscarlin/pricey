@@ -12,10 +12,7 @@ const myConnection = knex({
 })
 
 function getAll() {
-  myConnection
-    .select()
-    .from('products')
-    .then(console.log)
+  return myConnection.select().from('products')
 }
 
 export default {

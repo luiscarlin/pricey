@@ -6,7 +6,7 @@ function App() {
     fetch('/api/products')
       .then(res => res.json())
       .then(body => body.data)
-      .then(data => setReceived(data))
+      .then(data => setReceived(data[0].NAME))
   }, [])
 
   return <h1>hello there {received}</h1>
