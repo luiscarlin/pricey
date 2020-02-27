@@ -9,7 +9,9 @@
     "serve": "node dist/app.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.20.10",
+    "pg": "^7.18.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
