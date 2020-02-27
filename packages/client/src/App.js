@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function App() {
-  return <h1>hello there</h1>
+  const [received, setReceived] = useState('')
+  useEffect(() => {
+    fetch('/api/products')
+      .then(res => res.json())
+      .then(body => body.data)
+      .then(data => setReceived(data))
+  }, [])
+
+  return <h1>hello there {received}</h1>
 }
 
 export default App
