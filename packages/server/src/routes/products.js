@@ -6,8 +6,7 @@ const router = express.Router()
 router.get('/', async (req, res) => {
   const allProducts = await Product.getAll()
 
-  console.log(allProducts)
-  res.send({ data: allProducts })
+  res.send({ products: allProducts })
 })
 
 export default router
