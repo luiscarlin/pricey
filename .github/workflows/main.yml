@@ -22,4 +22,6 @@ jobs:
       uses: digitalocean/action-doctl@v1.6.0
       env:
         DIGITALOCEAN_ACCESS_TOKEN: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      with:
+        args: hostname
       
