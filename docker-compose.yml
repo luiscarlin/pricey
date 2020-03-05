@@ -4,6 +4,4 @@ services:
     build: client/
     restart: unless-stopped
     ports:
-      - '3000:80'
-    environment:
-      RUNTIME_API_HOST: 'http://localhost:3000'
+      - '80:80'
