@@ -21,7 +21,7 @@ jobs:
           source: '.'
           target: '/opt/app'
 
-      - name: Deploy
+      - name: Deploy application
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
