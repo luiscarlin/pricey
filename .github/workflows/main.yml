@@ -28,4 +28,4 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
-          script: docker-compose up --build -d
+          script: cd /opt/app && docker-compose up --build -d
